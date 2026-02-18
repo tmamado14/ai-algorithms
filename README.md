@@ -1,45 +1,42 @@
-# LLM Engineering & Agentic AI Labs
+# CO 533: Artificial and Computational Intelligence Algorithms
 
-## 1) Clone The Repo
+Hands-on repository for **LLM Engineering**, with emphasis on **Agentic AI**.
+
+## What This Repo Is For
+- Guided notebook labs for class activities
+- Local-first experimentation using Ollama + Qwen
+- Optional OpenAI API exercises for hosted/premium models
+
+## Quick Start (PowerShell)
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/tmamado14/ai-algorithms.git
 cd ai-algorithms
-```
-
-## 2) Install Dependencies (uv)
-```powershell
 uv sync --python 3.13
-```
-
-## 3) Configure Environment
-```powershell
 Copy-Item .env.example .env
 ```
 
-Edit `.env`:
-- `OLLAMA_MODEL=qwen3:8b`
+Then open `.env` and set:
 - `OPENAI_API_KEY=...` (optional, only needed for OpenAI sections)
 
-## 4) Ollama + Qwen Quick Tutorial
-1. Install Ollama from `https://ollama.com/download`.
-2. Start Ollama (app or background service).
-3. Pull the model:
+## Ollama + Qwen Setup
+1. Install Ollama: `https://ollama.com/download`
+2. Pull model:
    ```powershell
    ollama pull qwen3:8b
    ```
-4. Verify:
+3. Verify:
    ```powershell
    ollama list
    ```
-5. Optional test run:
+4. Optional quick run:
    ```powershell
    ollama run qwen3:8b
    ```
 
-## 5) Run The Lab In VS Code
-1. Open `labs/01_openai_and_local_ollama.ipynb`.
-2. Select kernel `.venv\Scripts\python.exe`.
-3. Run cells from top to bottom.
+## Run In VS Code
+1. Open any notebook in `labs/`
+2. Select kernel `.venv\Scripts\python.exe`
+3. Run cells top to bottom
 
 ## Labs
-- `labs/01_openai_and_local_ollama.ipynb`
+This repository is continuously updated. Check `labs/` for the latest notebooks.
