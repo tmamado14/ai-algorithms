@@ -38,5 +38,17 @@ Then open `.env` and set:
 2. Select kernel `.venv\Scripts\python.exe`
 3. Run cells top to bottom
 
+## Get New Labs (When Instructor Updates Repo)
+Recommended:
+```powershell
+git checkout main
+git pull origin main
+```
+
+Manual fallback (download only new notebooks):
+1. Download new `.ipynb` lab files from GitHub.
+2. Move/copy them into your local `labs/` folder.
+3. Re-open VS Code and run the new notebook.
+
 ## Labs
 This repository is continuously updated. Check `labs/` for the latest notebooks.
