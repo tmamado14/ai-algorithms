@@ -15,6 +15,14 @@ uv sync --python 3.13
 Copy-Item .env.example .env
 ```
 
+## Quick Start (Mac/Linux)
+```bash
+git clone https://github.com/tmamado14/ai-algorithms.git
+cd ai-algorithms
+uv sync --python 3.13
+cp .env.example .env
+```
+
 Then open `.env` and set:
 - `OPENAI_API_KEY=...` (optional, only needed for OpenAI sections)
 
@@ -35,7 +43,9 @@ Then open `.env` and set:
 
 ## Run In VS Code
 1. Open any notebook in `labs/`
-2. Select kernel `.venv\Scripts\python.exe`
+2. Select the `.venv` kernel/interpreter
+   - Windows: `.venv\Scripts\python.exe`
+   - Mac/Linux: `.venv/bin/python`
 3. Run cells top to bottom
 
 ## Get New Labs (When Instructor Updates Repo)
